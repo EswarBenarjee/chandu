@@ -1,0 +1,194 @@
+section {
+    padding: 5vh 5vw;
+    width: 100%;
+}
+
+section h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: var(--my-blue);
+    font-weight: 700;
+}
+
+:root {
+    --my-blue: #00327Aff;
+}
+
+/* HERO */
+.hero {
+    background-image: url('../img/chandu.png');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(0, 0, 0, 0.5);
+    background-blend-mode: soft-light;
+    color: #fff;
+}
+
+.hero .content {
+    position: absolute;
+    top: 65%;
+    left: 32%;
+}
+
+.hero .content q {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.3rem;
+}
+
+.hero .content p {
+    margin-top: 25px;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: var(--my-blue);
+    letter-spacing: 0.2rem;
+}
+
+
+/* Info */
+
+.info {
+    /* background-color: #7AD7F0; */
+    background-color: var(--my-blue);
+    padding: 10vh 10vw;
+}
+
+.info .lift {
+    background-color: #fff;
+    padding: 5vh 5vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.col-md-6 iframe {
+    height: 400px;
+    width: 100%;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.location .location-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--my-blue);
+}
+.location .location-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #0563bb;
+    position: relative;
+}
+.location .location-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #0563bb;
+    margin-bottom: 10px;
+}
+.location .location-item h5 {
+    font-size: 16px;
+    background: #f7f8f9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.location .location-item ul {
+    padding-left: 20px;
+}
+.location .location-item ul li {
+    padding-bottom: 10px;
+}
+.location .location-item:last-child {
+    padding-bottom: 0;
+}
+.location .location-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #0563bb;
+}
+
+.location-title i {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: rotateY(0deg);
+    }
+    25% {
+        transform: rotateY(90deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    75% {
+        transform: rotateY(90deg);
+    }
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-item {
+    background-color: var(--my-blue);
+    color: #fff;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    min-height: 200px;
+}
+
+/* Resume */
+
+
+/* Filters */
+.filters {
+    min-height: 100vh;
+}
+
+.filters .row {
+    height: 100%;
+}
+
+.filter-item {
+    height: 70%;
+}
+.filter-item img {
+    border-radius: 8px;
+    height: 100%;
+    width: 100%;
+}
+
+.filter-item:hover {
+    position: relative;
+    top: -20px;
+    height: 80%;
+}
+
+.filter-item video {
+    display: none;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 30px 50px -15px #111;
+    border-radius: 8px;
+}
