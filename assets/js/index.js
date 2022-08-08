@@ -39,3 +39,18 @@ for (let index = 0; index < filters.length; index++) {
         video.style.display = 'none';
     });
 }
+
+let honestResume = document.getElementById('honest');
+honestResume.addEventListener('click', () => {
+    document.getElementById("honest-view").style.display = 'block';
+});
+
+function display() {
+    document.getElementById('hero').style.transistion = '2s';
+}
+
+// var rect = document.getElementById('hero_name').getBoundingClientRect();
+// let centerY = rect.bottom;
+// let centerX = (rect.left+rect.right)/2;
+
+// console.log(centerX +" "+ centerY);

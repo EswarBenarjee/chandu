@@ -12,11 +12,11 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body onload=display()>
     <section id="hero" class="hero">
         <div class="content">
             <q>You are who you want to be.</q>
-            <p>
+            <p id="hero_name">
                 - "S. V. Chandra Sekhar"
             </p>
 
@@ -97,8 +97,25 @@
         </div>
     </section>
     
-    <section id="resume" class="resume">
-        
+    <section id="resume" class="resume row">
+        <div class="col-md-6 resume-item">
+            <div class="resume-data">
+                <h4>Professional Resume</h4>
+                <h6>Download here <i class="fa-solid fa-circle-down"></i></h6>
+            </div>
+        </div>
+        <div class="col-md-6 resume-item">
+            <div class="resume-data">
+                <h4>Honest Resume</h4>
+                <h6 id="honest">Download here <i class="fa-solid fa-circle-down"></i></h6>
+                <br>
+                <div id="honest-view">
+                    <h3>Haha! <br>
+                        It's the same resume.
+                    </h3>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="filters" class="filters">

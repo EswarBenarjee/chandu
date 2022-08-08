@@ -19,12 +19,31 @@ section h3 {
 .hero {
     background-image: url('../img/chandu.png');
     height: 100vh;
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    color: #fff;
+    animation: colorChange 1s;
     background-color: rgb(0, 0, 0, 0.5);
     background-blend-mode: soft-light;
-    color: #fff;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: rgb(0, 0, 0, 1);
+    }
+    25% {
+        background-color: rgb(0, 0, 0, 0.875);
+    }
+    50% {
+        background-color: rgb(0, 0, 0, 0.75);
+    }
+    75% {
+        background-color: rgb(0, 0, 0, 0.625);
+    }
+    100% {
+        background-color: rgb(0, 0, 0, 0.5);
+    }
 }
 
 .hero .content {
@@ -166,7 +185,53 @@ section h3 {
 }
 
 /* Resume */
+.resume {
+    height: 100vh;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
 
+.resume-item {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(0, 0, 0, 0.5);
+    background-blend-mode: soft-light;
+    height: 100%;
+    text-align: center;
+}
+.resume-item:first-child {
+    background-image: url('../img/chandu.png');
+}
+.resume-item:last-child {
+    background-image: url('../filters/1.jpg');
+}
+
+.resume-item .resume-data {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    width: 40%;
+    z-index: 1;
+}
+
+.resume-item .resume-data h6 {
+    background-color: #fff;
+    border-radius: 8px;
+    color: #000;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+}
+
+.resume-item .resume-data h3 {
+    color: #fff;
+}
+
+.resume-item #honest-view {
+    display: none;
+}
 
 /* Filters */
 .filters {
