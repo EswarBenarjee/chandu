@@ -7,13 +7,16 @@ Slide
  3 - skills 
  4 - professional resume | honest resume - haha lol both are same download from here <--
  5 - Biodata 
- 6 - My instagram top 5 filters 
+ 6 - My instagram top 4 filters 
  7 - Startup Idea --> its a secret! you an entreprenuer intersted in my idea? come let
 	 discuss
  8 - My favourites -----> like place, movie, food, song, music album, artist
  
- 
- 
+food: <i class="fa-solid fa-bowl-food"></i>
+movie: <i class="fa-solid fa-film"></i>
+place: <i class="fa-solid fa-earth-asia"></i>
+song: <i class="fa-solid fa-music"></i>
+artist:
 
  
  E mail - venkatachandrasekharsaladi@gmail.com
@@ -30,4 +33,6 @@ Slide
 1
 2
 3
+4
 6
+8

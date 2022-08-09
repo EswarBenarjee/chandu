@@ -54,3 +54,22 @@ function display() {
 // let centerX = (rect.left+rect.right)/2;
 
 // console.log(centerX +" "+ centerY);
+
+let icons = document.getElementsByClassName('fav-icon');
+let contents = document.getElementsByClassName('fav-content');
+for (let index = 0; index < icons.length; index++) {
+    const icon = icons[index];
+    icon.addEventListener('click', () => {
+        for (let index1 = 0; index1 < icons.length; index1++) {
+            const icon1 = icons[index1];
+            icon1.classList.remove('active');
+        }
+        for (let index1 = 0; index1 < contents.length; index1++) {
+            const content1 = contents[index1];
+            content1.style.display = 'none';
+        }
+        icon.classList.add('active');
+        let number = icon.id[icon.id.length-1];
+        document.getElementById('fav-content'+number).style.display = 'block';
+    });  
+}

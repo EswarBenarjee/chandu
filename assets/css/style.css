@@ -192,21 +192,29 @@ section h3 {
     margin: 0;
 }
 
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .resume {
+        margin-bottom: 100vh;
+    }
+}
+
 .resume-item {
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgb(0, 0, 0, 0.5);
-    background-blend-mode: soft-light;
+    background-blend-mode: saturation;
     height: 100%;
     text-align: center;
 }
 .resume-item:first-child {
-    background-image: url('../img/chandu.png');
+    background-image: url('../img/professional.jpeg');
 }
 .resume-item:last-child {
-    background-image: url('../filters/1.jpg');
+    background-image: url('../img/honest.jpeg');
 }
 
 .resume-item .resume-data {
@@ -271,4 +279,89 @@ section h3 {
         width: 50%;
         height: 50%;
     }
+}
+
+/* Favorites */
+.season_tabs {
+    position: relative;   
+    min-height: 360px; /* This part sucks */
+    clear: both;
+    margin: 25px 0;
+  }
+  .season_tab {
+    float: left;  
+    clear: both;
+    width: 150px;
+  }
+  .season_tab label {
+      background: #eee;
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-left: -1px;
+      font-size: 21px;
+      vertical-align: middle;
+      position: relative;
+      left: 1px;
+      width: 264px;
+      height: 70px;
+      display: table-cell;
+  }
+  .season_tab [type=radio] {
+    display: none;   
+  }
+  .season_content {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background: white;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+   }
+  .season_content span {
+    animation: 0.5s ease-out 0s 1 slideInFromTop; 
+  }
+  [type=radio]:checked ~ label {
+    background: white;
+    border-bottom: 2px solid #8bc34a;
+    z-index: 2;
+  }
+  [type=radio]:checked ~ label ~ .season_content {
+    z-index: 1;
+  }
+
+/* Favorites */
+.favs {
+    background-color: var(--my-blue);
+}
+
+.favs>div {
+    background-color: #fff;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+    color: #2c2c2c;
+    padding: 5vh 2vw;
+}
+
+.favs .icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.favs .fav-icon {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    padding: 11px 10px;
+}
+
+.favs .fav-icon.active {
+    background-color: #444;
+    border-radius: 30px;
+    color: #fff;
+}
+
+.fav-content {
+    color: #444;
+    display: none;
+    margin-top: 30px;
 }
