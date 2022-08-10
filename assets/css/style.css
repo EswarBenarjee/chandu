@@ -15,6 +15,16 @@ section h3 {
     --my-blue: #00327Aff;
 }
 
+@font-face {
+    font-family: Varino;
+    src: url("../fonts/varino/Varino\ Normal.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Centurion;
+    src: url("../fonts/centurion/Centauri.otf") format("opentype");
+}
+
 /* HERO */
 .hero {
     background-image: url('../img/chandu.png');
@@ -60,9 +70,9 @@ section h3 {
 }
 
 .hero .content q {
-    font-size: 2rem;
     letter-spacing: 0.2rem;
     word-spacing: 0.3rem;
+    font-family: Centurion;
 }
 
 .hero .content p {
@@ -70,8 +80,8 @@ section h3 {
     text-align: right;
     font-size: 1.2rem;
     font-weight: bolder;
-    color: var(--my-blue);
     letter-spacing: 0.2rem;
+    font-family: 'Varino';
 }
 
 
@@ -333,13 +343,13 @@ section h3 {
 
 /* Favorites */
 .favs {
-    background-color: var(--my-blue);
+    background-color: orange;
 }
 
 .favs>div {
     background-color: #fff;
     box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
-    color: #2c2c2c;
+    color: orangered;
     padding: 5vh 2vw;
 }
 
@@ -351,13 +361,14 @@ section h3 {
 .favs .fav-icon {
     margin-left: 2.5px;
     margin-right: 2.5px;
-    padding: 11px 10px;
+    padding: 11px 20px;
 }
 
 .favs .fav-icon.active {
-    background-color: #444;
+    background-color: orangered;
     border-radius: 30px;
     color: #fff;
+    transition: 1s;
 }
 
 .fav-content {
@@ -365,3 +376,12 @@ section h3 {
     display: none;
     margin-top: 30px;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .favs .fav-icon {
+        padding: 11px 10px;
+    }
+}
+
+/* Footer */
