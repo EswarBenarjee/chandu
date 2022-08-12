@@ -78,10 +78,9 @@ section h3 {
 .hero .content p {
     margin-top: 25px;
     text-align: right;
-    font-size: 1.2rem;
-    font-weight: bolder;
+    font-size: 0.8rem;
     letter-spacing: 0.2rem;
-    font-family: 'Varino';
+    font-family: Centurion;
 }
 
 
@@ -343,7 +342,7 @@ section h3 {
 
 /* Favorites */
 .favs {
-    background-color: orange;
+    background-image: linear-gradient(to right, red, var(--my-blue));
 }
 
 .favs>div {
@@ -361,11 +360,11 @@ section h3 {
 .favs .fav-icon {
     margin-left: 2.5px;
     margin-right: 2.5px;
-    padding: 11px 20px;
+    padding: 11px 15px;
 }
 
 .favs .fav-icon.active {
-    background-color: orangered;
+    background-image: linear-gradient(to right, red, var(--my-blue));
     border-radius: 30px;
     color: #fff;
     transition: 1s;
@@ -375,13 +374,6 @@ section h3 {
     color: #444;
     display: none;
     margin-top: 30px;
-}
-
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .favs .fav-icon {
-        padding: 11px 10px;
-    }
 }
 
 /* Footer */
